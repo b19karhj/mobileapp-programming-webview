@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        myWebView.loadUrl("https://www.his.se");
+
 
 
 
