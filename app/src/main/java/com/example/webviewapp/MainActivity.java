@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-
+        myWebView.loadUrl("File:///android_asset/IndexPage1");
 
 
 

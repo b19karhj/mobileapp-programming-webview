@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hej!</h1>
+    <input type="text" name="test1" value="test"></input>
+    <input type="submit" name="test1"></input>
+</body>
+</html>
