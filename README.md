@@ -16,13 +16,8 @@ Sedan laddes koden:
 <uses-permission android:name="android.permission.INTERNET" />
 ```
 
-in i AndroidManifest.xml för att webviewn skulle få internetåtkomst.
-Samtidigt som koden:
-
-```
- android:id="@+id/my_webview"
- ```
- för att ge ett id till webview.
+in i contentmain läggs id in för att knyta snamman webviewn.
+w.
 
  ```
  <WebView
@@ -51,12 +46,18 @@ Samtidigt som koden:
  myWebView.loadUrl("File:///android_asset/First.html");
  ```
 
- lades in i showInternalWebPage funktionen så att den öppnar sidan när internalWebPage funktionen aktiveras.
- Men det gick inte helt felfritt för att koden.
+ Url koden lades in i external och internal. Variabeln är redan deklarerad i private globalt.
+
+External
+ ```
+myWebView.loadUrl("https://www.google.com/");
+ ```
+ Internal
 
  ```
- WebView myWebView = findViewById(R.id.my_webview);
- ```
+ myWebView.loadUrl("File:///android_asset/First.html");
+  ```
+
  Måste också in i funktionen så att Webvien vet att den skall öppna filen med våran tidigare skapade webView.
 
  Här är en bil på min externa webplats google.com
